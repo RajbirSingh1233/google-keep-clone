@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .header{
   width: 100%;
   line-height: 50px;
@@ -7,7 +11,7 @@
   align-items: center;
   padding-left: 50px;
   color: white;
-  box-shadow: 5px 3px 15px -5px rgba(0 , 0 , 0 , 0.5);
+  box-shadow: 5px 3px 15px -5px rgba(0 , 0 , 0 , 2);
 
 }
 
@@ -24,6 +28,10 @@
   width: 500px;
   padding: 15px 10px 5px 10px;
   margin: 20px auto;
+  border-radius: 10px;
+  border-color: black;
+  height: max-content;
+  box-shadow: 0 4px 8px 0 rgba(242, 255, 0, 0.2), 0 6px 20px 0 rgba(242, 214, 4, 0.7);
 }
 
 .my_notes h1{
@@ -52,16 +60,18 @@ input{
   font-size:1.5rem;
   margin: 10px 0;
   font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
 }
 
 textarea{
   width: 100%;
   line-height: 30px;
-  background: transparent;
   border: none;
   outline: none;
   font-size: 1rem;
   margin: 10px 0;
+  text-transform: capitalize;
 }
 
 .note{
@@ -72,11 +82,13 @@ textarea{
   width: 240px;
   margin: 16px;
   float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .note h1{
   font-size: 1.1rem;
   margin-bottom: 6px;
+  text-transform: capitalize;
 }
 
 .note p{
@@ -84,6 +96,7 @@ textarea{
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
+  text-transform: capitalize;
 }
 
 .note .btn{
@@ -120,7 +133,7 @@ textarea{
 }
 
 .MuiButton-root{
-  width: 30px;
+  width: 50px;
   height: 50px;
   position: absolute;
   bottom: -28px;
@@ -129,10 +142,9 @@ textarea{
   background: #f4b400 !important;
   box-shadow: 5px 5px 15px -5px rgba(0 , 0 , 0 ,0.5);
   color: #fff;
-
 }
 
-.Button{
+.Button .btn1{
   border-radius: 50%;
 }
 
